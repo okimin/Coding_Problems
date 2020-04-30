@@ -1,0 +1,15 @@
+
+Daniel
+Question: Write a function that returns True or False if strings s1, s2 are anagrams of each other?
+
+PROS:
+Asked clarifying questions about the problem
+Ran through a couple of examples
+Thought of the right Data Structure (hash map) to solve the problem
+
+CONS:
+Didn’t run through edge case examples when clarifying
+Should discuss approach before starting to code
+Need to be careful of typos when typing during an interview, on a whiteboard it’s easier to let slide, on a keyboard, usually more scrutinized 
+Used the wrong data structure / mis-implemented at first
+Said didn’t remember full implementation
