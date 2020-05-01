@@ -1,8 +1,5 @@
 package LeetCode.Day30;
 
-import java.util.*;
-import java.io.*;
-
 public class moveZeroes {
 
     // Given an array nums, write a function to move all 0's to the end of it while
@@ -20,27 +17,24 @@ public class moveZeroes {
     }
 
     public void moveZero(int[] nums) {
-         
-        int zero=0;
-        int nonzero=0;
 
-        while ( Math.max(nonzero , zero)  < nums.length ){
-                if( nums[nonzero]==0){
-                    nonzero++;
-                }
-                else if(nums[zero]!=0){
-                    zero++;
-                }
-                else if (nonzero> zero){
-                    swap(nums, nonzero, zero);
-                    nonzero++;
-                    zero++;
-                }
-                else{
-                    nonzero = zero +1;
-                }
+        int zero = 0;
+        int nonzero = 0;
 
+        while (Math.max(nonzero, zero) < nums.length) {
+            if (nums[nonzero] == 0) {
+                nonzero++;
+            } else if (nums[zero] != 0) {
+                zero++;
+            } else if (nonzero > zero) {
+                swap(nums, nonzero, zero);
+                nonzero++;
+                zero++;
+            } else {
+                nonzero = zero + 1;
+            }
+
+        }
 
     }
-
 }

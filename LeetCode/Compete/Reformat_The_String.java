@@ -42,9 +42,6 @@ package LeetCode.Compete;
 // Input: s = "ab123"
 // Output: "1a2b3"
 
-import java.util.*;
-import java.io.*;
-
 public class Reformat_The_String {
 
     public String reformat(String s) {
@@ -63,8 +60,7 @@ public class Reformat_The_String {
         if ((Math.abs(numbers.length() - letters.length()) > 1))
             return "";
         else {
-            int i = 0;
-            int j = 0;
+
             if (numbers.length() > letters.length()) {
                 ans += numbers.charAt(0);
                 for (int x = 0; x < (numbers.length() + letters.length()) / 2; x++) {

@@ -10,4 +10,37 @@ public class fibonacci {
     // By considering the terms in the Fibonacci sequence whose values do not exceed
     // four million, find the sum of the even-valued terms.
 
+    public static void fibo_till_even(int num) {
+
+        /*
+         * How Fibonacci Works 0th Value = 1 1st Value = 1;
+         * 
+         * ith Value = i-1th Value - i-2th value
+         */
+
+        int ith_fibo = 1;
+        int previous_fibo = 0;
+        int total = 0;
+        int iterations = 1;
+
+        while (ith_fibo <= num) {
+            int temp = ith_fibo;
+            ith_fibo += previous_fibo;
+            previous_fibo = temp;
+            if (ith_fibo % 2 == 0)
+                total += ith_fibo;
+
+            System.out.printf("Iteration %d : %d\tTotal So Far Is %d\n ", iterations, ith_fibo, total);
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        // Answer 4613732
+        int num = 4000000;
+        fibo_till_even(num);
+
+    }
+
 }

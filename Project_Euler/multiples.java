@@ -1,8 +1,5 @@
 package Project_Euler;
 
-import java.util.*;
-import java.io.*;
-
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, 
 // we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
@@ -25,6 +22,7 @@ public class multiples {
 
         int input = 1000;
         System.out.println(mult(input));
+        // Answer Should Be 233168
     }
 
 }
