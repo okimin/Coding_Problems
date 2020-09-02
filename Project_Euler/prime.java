@@ -1,7 +1,5 @@
 package Project_Euler;
 
-import jdk.jfr.Unsigned;
-
 public class prime {
 
     /// MY IMPLENTATION
